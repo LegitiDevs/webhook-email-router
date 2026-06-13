@@ -13,8 +13,8 @@ export default {
       body: JSON.stringify({
         embeds: [
           {
-            title: "Email",
-            description: "rahh",
+            title: "New email received",
+            description: `**Subject:** ${email.subject ?? "*none*"}\n**Text:** ${email.text ?? "*none*"}\n**HTML:** ${email.html ?? "*none*"}`,
           },
         ],
       }),
