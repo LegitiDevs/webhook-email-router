@@ -14,7 +14,7 @@ export default {
         embeds: [
           {
             title: "New email received",
-            description: `**From:**: ${email.from ?? "*no one??*"}**Subject:** ${email.subject ?? "*none*"}\n**Text:** ${email.text ?? "*none*"}\n**HTML:** ${email.html ?? "*none*"}`,
+            description: `**From:**: ${email.from?.address ?? "*no one??*"}**Subject:** ${email.subject ?? "*none*"}\n**Text:** ${email.text ?? "*none*"}\n**HTML:** ${email.html ?? "*none*"}`,
           },
         ],
       }),
